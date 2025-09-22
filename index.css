@@ -13,15 +13,24 @@ body {
   background: #fff;
 }
 
+/* Center the whole resume */
+.header, .content {
+  max-width: 760px;           /* tweak if you want wider/narrower */
+  margin: 0 auto;             /* centers the block on the page */
+  text-align: center;         /* centers text inside */
+}
+
 /* Header */
 .header {
-  padding: 18px 16px;
+  padding: 24px 16px;
   border-bottom: 1px solid var(--border);
 }
-.header h1 { margin: 0 0 4px; }
+.header h1 { margin: 0 0 8px; }
 .contact { margin: 0; color: var(--muted); }
 .contact a { color: var(--brand); text-decoration: none; }
-.actions { margin-top: 8px; }
+
+/* Print button row (kept, but hidden on print) */
+.actions { margin-top: 10px; }
 .btn {
   display: inline-block;
   padding: 6px 10px;
@@ -32,32 +41,50 @@ body {
 }
 
 /* Content */
-.content { padding: 16px; }
+.content { padding: 20px 16px 28px; }
 h2 {
-  margin: 16px 0 6px;
+  margin: 18px 0 10px;
   font-size: 1rem;
-  letter-spacing: .02em;
+  letter-spacing: .04em;
   text-transform: uppercase;
 }
+
+/* Rows now stack and center */
 .row {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px;
-  padding: 6px 0;
+  display: block;             /* no two-column grid */
+  padding: 8px 0;
   border-bottom: 1px dashed #eee;
 }
 .row:last-child { border-bottom: 0; }
 .left strong { display: block; }
 .muted { color: var(--muted); font-size: .95em; }
-.bullets { margin: 6px 0 0 16px; }
 
-/* Print styles */
+/* Lists centered */
+.bullets {
+  margin: 8px auto 0;
+  padding: 0;
+  text-align: center;
+  list-style-position: inside; /* bullets appear inside centered block */
+}
+.bullets li { margin: 4px 0; }
+
+/* The right-side dates become a centered line beneath each entry */
+.right {
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* Links */
+a { color: var(--brand); }
+
+/* Print styles (keep centered) */
 @media print {
   @page { size: Letter; margin: 0.7in; }
   .no-print { display: none !important; }
+  .header, .content { max-width: 760px; margin: 0 auto; text-align: center; }
   body { font: 11.5pt/1.35 Georgia, Cambria, "Times New Roman", Times, serif; }
-  h2 { font: 10pt/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; }
-  .row { border: 0; padding: 3px 0; }
+  h2 { font: 10pt/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .06em; }
+  .row { border: 0; padding: 4px 0; }
   a { color: #000; text-decoration: none; }
   h2, h3 { break-after: avoid; }
   .row, .bullets { break-inside: avoid; }
