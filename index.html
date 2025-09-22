@@ -1,128 +1,89 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luke Thormeyer — Resume</title>
-  <meta name="description" content="Resume for Luke Thormeyer — Lewis University format, printable and accessible." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- HEADER -->
-  <header class="header" role="banner">
-    <div class="container">
-      <h1 class="name">Luke Thormeyer</h1>
-      <p class="contact">
-        411 West Joliet Highway, New Lenox, IL 60451
-        · <a href="tel:+18153517856">(815) 351-7856</a>
-        · <a href="mailto:lukemthormeyer@lewisu.edu">lukemthormeyer@lewisu.edu</a>
-      </p>
-      <div class="actions no-print">
-        <a class="btn" href="#" onclick="window.print(); return false;">Print / Save PDF</a>
-        <!-- Optional static download; add a resume.pdf in repo root to enable -->
-        <a class="btn outline" href="resume.pdf" target="_blank" rel="noopener">Download PDF</a>
-      </div>
-    </div>
+  <header class="header">
+    <h1>Luke Thormeyer</h1>
+    <p class="contact">
+      411 West Joliet Highway, New Lenox, IL 60451 · (815) 351-7856 · 
+      <a href="mailto:lukemthormeyer@lewisu.edu">lukemthormeyer@lewisu.edu</a>
+    </p>
+    <p class="actions no-print">
+      <a class="btn" href="#" onclick="window.print();return false;">Print / Save PDF</a>
+    </p>
   </header>
 
-  <main id="main" class="container" role="main">
-    <!-- OBJECTIVE -->
-    <section class="section">
+  <main class="content">
+    <section>
       <h2>Objective</h2>
-      <p>
-        A dedicated and service-oriented professional seeking challenging computer science and programming roles,
-        utilizing experience, training, and education to benefit your organization. Hard-working and self-motivated,
-        ready for new opportunities.
-      </p>
+      <p>A dedicated and service-oriented professional seeking challenging computer science and programming roles, utilizing experience, training, and education to benefit your organization. Hard-working and self-motivated, ready for new opportunities.</p>
     </section>
 
-    <!-- EDUCATION -->
-    <section class="section">
+    <section>
       <h2>Education</h2>
-
-      <article class="row">
-        <div class="row-main">
-          <h3>Lewis University — Bachelor of Computer Science</h3>
-          <p class="muted">Romeoville, Illinois</p>
+      <div class="row">
+        <div class="left">
+          <strong>Lewis University</strong> — Bachelor of Computer Science
+          <div class="muted">Romeoville, Illinois</div>
         </div>
-        <div class="row-side">Expected 2026</div>
-      </article>
-
-      <article class="row">
-        <div class="row-main">
-          <h3>Lincoln-Way Central High School</h3>
-          <p class="muted">New Lenox, Illinois</p>
+        <div class="right">Expected 2026</div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <strong>Lincoln-Way Central High School</strong>
+          <div class="muted">New Lenox, Illinois</div>
           <ul class="bullets">
-            <li>Graduation 2022</li>
             <li>Honors 4.0 GPA</li>
             <li>National Honor Society</li>
             <li>High Honors (award)</li>
           </ul>
         </div>
-        <div class="row-side">2018–2022</div>
-      </article>
+        <div class="right">Graduation 2022</div>
+      </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section">
+    <section>
       <h2>Skills</h2>
-      <ul class="pill-list">
-        <li>Java</li><li>HTML</li><li>Python</li><li>JavaScript</li>
-      </ul>
+      <p>Java · HTML · Python · JavaScript</p>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
+    <section>
       <h2>Experience</h2>
-
-      <article class="row">
-        <div class="row-main">
-          <h3>Owner / Operator — Thormeyer Landscaping</h3>
-          <p class="muted">New Lenox, Illinois</p>
+      <div class="row">
+        <div class="left">
+          <strong>Owner / Operator — Thormeyer Landscaping</strong>
+          <div class="muted">New Lenox, Illinois</div>
           <ul class="bullets">
             <li>Maintained customers’ lawns with consistent quality and scheduling.</li>
             <li>Trimmed bushes and hedges; ensured clean property appearance.</li>
             <li>Kept organized records for each client and services performed.</li>
           </ul>
         </div>
-        <div class="row-side">2020–Present</div>
-      </article>
-
-      <article class="row">
-        <div class="row-main">
-          <h3>Stocker — Target</h3>
-          <p class="muted">New Lenox, Illinois</p>
+        <div class="right">2020–Present</div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <strong>Stocker — Target</strong>
+          <div class="muted">New Lenox, Illinois</div>
           <ul class="bullets">
             <li>Organized and maintained assigned department area.</li>
             <li>Unloaded and staged new inventory for shelving.</li>
             <li>Took stock counts and assisted with inventory accuracy.</li>
           </ul>
         </div>
-        <div class="row-side">2023</div>
-      </article>
+        <div class="right">2023</div>
+      </div>
     </section>
 
-    <!-- OPTIONAL: REFERENCES / NOTES -->
-    <section class="section">
+    <section>
       <h2>Additional</h2>
-      <p class="muted">Transcripts and credentials available upon request.</p>
+      <p>Transcripts and credentials available upon request.</p>
     </section>
   </main>
-
-  <footer class="footer no-print" role="contentinfo">
-    <div class="container">
-      <p>© <span id="y"></span> Luke Thormeyer • Built with semantic HTML & print-ready CSS • Hosted on Azure</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-
